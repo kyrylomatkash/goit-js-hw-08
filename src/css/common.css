@@ -18,9 +18,9 @@ img {
 }
 .video-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Adjust to desired height */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 h1 {
   font-size: 36px;
