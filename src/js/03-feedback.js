@@ -4,7 +4,6 @@ import throttle from 'lodash.throttle';
 const feedbackForm = document.querySelector('.feedback-form');
 const emailInput = feedbackForm.querySelector('input[name="email"]');
 const messageTextarea = feedbackForm.querySelector('textarea[name="message"]');
-const thanksMessage = document.querySelector('.message')
 // Збереження данних форми до сховища
 const saveFormDataToStorage = throttle(() => {
   const formData = {
