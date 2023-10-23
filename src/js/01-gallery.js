@@ -3,7 +3,7 @@ import { galleryItems } from './gallery-items.js';
 import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
-let lightbox;
+// Основні змінні
 const gallery = document.querySelector('.gallery');
 const galleryTemplate = galleryItems.map(({ preview, original, description }) => {
   return `<li class='gallery__item'>
@@ -12,7 +12,10 @@ const galleryTemplate = galleryItems.map(({ preview, original, description }) =>
    </a>
 </li>`;
 }).join('');
+// Вставка DOM
 gallery.insertAdjacentHTML('beforeend', galleryTemplate);
+// Лайтбокс
+let lightbox;
 lightbox = new SimpleLightbox('.gallery a', {
     captions: true,
     captionDelay: 250,
